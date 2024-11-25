@@ -1,0 +1,8 @@
+.openable-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 10px;
+    animation: smooth-appear 1s ease forwards;
+}
