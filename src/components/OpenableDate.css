@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--card-bg);
     border-radius: 10px;
     animation: smooth-appear 1s ease forwards;
+    font-size: 54px;
+    font-weight: bold;
+    font-family: 'Engagement', cursive;
 }

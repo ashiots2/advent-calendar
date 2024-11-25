@@ -1,6 +1,154 @@
 .calendar {
     display: inline-grid;
     width: 100%;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-columns: repeat(5, 100px) 30px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+            'date-13 date-20 date-18 date-11 date-7 .'
+            'date-3 date-1 date-15 date-6 date-23 .'
+            'date-4 date-17 date-22 date-9 date-10 .'
+            'date-12 date-8 date-16 date-2 date-19 .'
+            'date-14 date-21 date-5 date-24 calendar-title calendar-title';
+}
+
+.calendar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    animation: smooth-appear 1s ease forwards;
+    font-size: 18px;
+    font-weight: bold;
+    grid-area: calendar-title;
+}
+
+.calendar-title__highlighted {
+    color: red;
+}
+
+.calendar-title__alternative-highlighted {
+    color: var(--christmas-green);
+}
+
+.date-13 {
+    color: var(--christmas-yellow);
+    grid-area: date-13;
+}
+
+.date-20 {
+    color: var(--christmas-green);
+    grid-area: date-20;
+}
+
+.date-18 {
+    color: var(--christmas-yellow);
+    grid-area: date-18;
+}
+
+.date-11 {
+    color: var(--christmas-green);
+    grid-area: date-11;
+}
+
+.date-7 {
+    color: var(--christmas-yellow);
+    grid-area: date-7;
+}
+
+.date-3 {
+    color: var(--christmas-green);
+    grid-area: date-3;
+}
+
+.date-1 {
+    color: var(--christmas-yellow);
+    grid-area: date-1;
+}
+
+.date-15 {
+    color: var(--christmas-green);
+    grid-area: date-15;
+}
+
+.date-6 {
+    color: var(--christmas-yellow);
+    grid-area: date-6;
+}
+
+.date-23 {
+    color: var(--christmas-green);
+    grid-area: date-23;
+}
+
+.date-4 {
+    color: var(--christmas-yellow);
+    grid-area: date-4;
+}
+
+.date-17 {
+    color: var(--christmas-green);
+    grid-area: date-17;
+}
+
+.date-22 {
+    color: var(--christmas-yellow);
+    grid-area: date-22;
+}
+
+.date-9 {
+    color: var(--christmas-green);
+    grid-area: date-9;
+}
+
+.date-10 {
+    color: var(--christmas-yellow);
+    grid-area: date-10;
+}
+
+.date-12 {
+    color: var(--christmas-green);
+    grid-area: date-12;
+}
+
+.date-8 {
+    color: var(--christmas-yellow);
+    grid-area: date-8;
+}
+
+.date-16 {
+    color: var(--christmas-green);
+    grid-area: date-16;
+}
+
+.date-2 {
+    color: var(--christmas-yellow);
+    grid-area: date-2;
+}
+
+.date-19 {
+    color: var(--christmas-green);
+    grid-area: date-19;
+}
+
+.date-14 {
+    color: var(--christmas-yellow);
+    grid-area: date-14;
+}
+
+.date-21 {
+    color: var(--christmas-green);
+    grid-area: date-21;
+}
+
+.date-5 {
+    color: var(--christmas-yellow);
+    grid-area: date-5;
+}
+
+.date-24 {
+    color: var(--christmas-green);
+    grid-area: date-24;
 }

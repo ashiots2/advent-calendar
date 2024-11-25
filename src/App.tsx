@@ -45,7 +45,13 @@ function App() {
     return (
         <>
             <h2>BarbieTheNinja's Advent Calendar</h2>
-            <Calendar calendarDates={calendarDates} toggleDate={toggleDate}/>
+            <Calendar calendarDates={calendarDates} toggleDate={toggleDate}>
+                <div className={"calendar-title"}>
+                    <span className={"calendar-title__highlighted"}>Tiny builds</span>
+                    <span className={"calendar-title__highlighted"}>of</span>
+                    <span className={"calendar-title__alternative-highlighted"}>Christmas</span>
+                </div>
+            </Calendar>
         </>
     )
 }

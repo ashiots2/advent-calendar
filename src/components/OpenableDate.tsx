@@ -9,7 +9,7 @@ export const OpenableDate = ({dateNumber, isOpen, onToggle}: {
     return (
         <>
             <div onClick={() => onToggle(dateNumber)}
-                 className={isOpen ? "openable-date openable-date__opened" : "openable-date"}>
+                 className={`openable-date date-${dateNumber} ${isOpen ? "openable-date__opened" : "openable-date"}`}>
                 {isOpen ? <img src={vite} alt={dateNumber.toString()}/> : <span>{dateNumber}</span>}
             </div>
         </>
