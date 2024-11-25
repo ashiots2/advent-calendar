@@ -47,9 +47,9 @@ function App() {
             <h2>BarbieTheNinja's Advent Calendar</h2>
             <Calendar calendarDates={calendarDates} toggleDate={toggleDate}>
                 <div className={"calendar-title"}>
-                    <span className={"calendar-title__highlighted"}>Tiny builds</span>
-                    <span className={"calendar-title__highlighted"}>of</span>
-                    <span className={"calendar-title__alternative-highlighted"}>Christmas</span>
+                    <span className={"calendar-title__highlighted calendar-title__larger font-glacial-indifference"}>Tiny builds</span>
+                    <span className={"calendar-title__highlighted font-amsterdam"}>of</span>
+                    <span className={"calendar-title__alternative-highlighted font-amsterdam"}>Christmas</span>
                 </div>
             </Calendar>
         </>
