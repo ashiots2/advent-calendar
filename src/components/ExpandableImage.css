@@ -1,0 +1,25 @@
+.expandable-image__thumbnail {
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.expandable-image__expanded__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.expandable-image__expanded__image {
+    width: 90%;
+    height: 90%;
+    border: 5px solid var(--christmas-green);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
