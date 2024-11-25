@@ -16,8 +16,7 @@ export const Calendar = ({children, calendarDates, toggleDate}: {
             </div>
             {
                 calendarDates.map((x) => (
-                    <OpenableDate key={"openable-date-" + x.date} dateNumber={x.date} isOpen={x.isOpen}
-                                  onToggle={toggleDate}/>
+                    <OpenableDate key={"openable-date-" + x.date} dateProperties={x} onToggle={toggleDate}/>
                 ))
             }
             {children}
