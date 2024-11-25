@@ -1,0 +1,17 @@
+.xmas-tree-card {
+    display: none;
+    grid-area: xmas-tree;
+    color: var(--christmas-green);
+}
+
+.xmas-tree-img {
+    height: 96px;
+    width: 80px;
+    color: var(--christmas-green);
+}
+
+@media only screen and (max-width: 600px) {
+    .xmas-tree-card {
+        display: flex !important;
+    }
+}

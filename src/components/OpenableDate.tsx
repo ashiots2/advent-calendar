@@ -1,4 +1,5 @@
 import {CalendarDateProperties} from "../types/CalendarDateProperties.ts";
+import "./OpenableDate.css";
 
 export const OpenableDate = ({dateProperties, onToggle}: {
                                  dateProperties: CalendarDateProperties,
@@ -8,7 +9,7 @@ export const OpenableDate = ({dateProperties, onToggle}: {
         return (
             <>
                 <div onClick={() => onToggle(dateProperties.date)}
-                     className={`openable-date date-${dateProperties.date} ${dateProperties.isOpen ? "openable-date__opened" : "openable-date"}`}>
+                     className={`calendar-card openable-date date-${dateProperties.date} ${dateProperties.isOpen ? "openable-date__opened" : "openable-date"}`}>
                     {dateProperties.isOpen ?
                         <img src={"./days/day" + dateProperties.date + ".svg"} alt={dateProperties.date.toString()}/> :
                         <span>{dateProperties.date}</span>}
