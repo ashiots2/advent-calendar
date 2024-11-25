@@ -12,19 +12,24 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .xmas-tree-card {
+        display: flex !important;
+    }
+
     .calendar {
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(1fr, auto);
+        grid-auto-rows: 1fr;
         grid-template-areas:
-            'date-13 date-20 date-18'
-            'date-11 date-7 date-3'
-            'date-1 date-15 date-6'
-            'date-23 date-4 date-17'
-            'date-22 date-9 date-10'
-            'date-12 date-8 date-16'
-            'date-2 date-19 date-14'
-            'date-21 date-5 date-24'
-            'calendar-title calendar-title calendar-title';
+            'xmas-tree date-13 date-20 '
+            'date-18 date-11 date-7'
+            'date-3 date-1 date-15'
+            'date-6 date-23 date-4'
+            'date-17 date-22 date-9'
+            'date-10 date-12 date-8 '
+            'date-16 date-2 date-19'
+            'date-14 date-21 date-5'
+            'date-24 calendar-title calendar-title';
     }
 }
 
@@ -53,6 +58,22 @@
     color: var(--christmas-green);
     font-size: 32px;
     font-weight: 100;
+}
+
+.xmas-tree-card {
+    background-color: var(--card-bg);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area: xmas-tree;
+    color: var(--christmas-green);
+}
+
+.xmas-tree-img {
+    height: 96px;
+    width: 80px;
+    color: var(--christmas-green);
 }
 
 .date-13 {
