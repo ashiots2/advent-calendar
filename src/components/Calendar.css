@@ -12,11 +12,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .xmas-tree-card {
-        display: flex !important;
-    }
-
     .calendar {
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 1fr;
@@ -58,22 +53,6 @@
     color: var(--christmas-green);
     font-size: 32px;
     font-weight: 100;
-}
-
-.xmas-tree-card {
-    background-color: var(--card-bg);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    grid-area: xmas-tree;
-    color: var(--christmas-green);
-}
-
-.xmas-tree-img {
-    height: 96px;
-    width: 80px;
-    color: var(--christmas-green);
 }
 
 .date-13 {

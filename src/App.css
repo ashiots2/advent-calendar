@@ -33,3 +33,69 @@
     height: 25vh;
     transform: rotate(45deg);
 }
+
+.openable-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    animation: smooth-appear 1s ease forwards;
+}
+
+.openable-date__opened {
+    transform: rotateY(180deg); /* Flipping effect */
+    background-color: #f5a623; /* Optional: Change background color when opened */
+}
+
+.openable-date img {
+    width: 80%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.openable-date__opened img {
+    opacity: 1; /* Ensure the image is fully visible when open */
+}
+
+.openable-date span {
+    flex: 1;
+    font-size: 92px;
+    font-weight: bold;
+    font-family: 'Engagement', cursive;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    padding: 0 100vh;
+}
+
+.openable-date__opened span {
+    opacity: 0; /* Hide the number when open */
+}
+
+.xmas-tree-card {
+    background-color: var(--card-bg);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area: xmas-tree;
+    color: var(--christmas-green);
+}
+
+.xmas-tree-img {
+    height: 96px;
+    width: 80px;
+    color: var(--christmas-green);
+}
+
+@media only screen and (max-width: 600px) {
+    .xmas-tree-card {
+        display: flex !important;
+    }
+}
