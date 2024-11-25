@@ -18,8 +18,6 @@
 }
 
 .expandable-image__expanded__image {
-    width: 90%;
-    height: 90%;
-    border: 5px solid var(--christmas-green);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 60%;
 }
