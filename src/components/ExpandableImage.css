@@ -24,7 +24,7 @@
     .expandable-image__expanded__image {
         margin-left: -62px;
         margin-top: 68px;
-        max-width: 650px;
-        max-height: 650px;
+        max-width: 450px;
+        max-height: 450px;
     }
 }
