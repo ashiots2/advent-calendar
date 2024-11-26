@@ -12,7 +12,7 @@ export const OpenableDate = ({dateProperties, onToggle}: {
                 <div onClick={() => onToggle(dateProperties.date)}
                      className={`calendar-card openable-date date-${dateProperties.date} ${dateProperties.isOpen ? "openable-date__opened" : "openable-date"}`}>
                     {dateProperties.isOpen ?
-                        <ExpandableImage src={"/advent-calendar/days/day" + dateProperties.date + ".svg"} alt={dateProperties.date.toString()}/> :
+                        <ExpandableImage src={"/advent-calendar/days/day" + dateProperties.date + ".png"} alt={dateProperties.date.toString()}/> :
                         <span>{dateProperties.date}</span>}
                 </div>
             </>

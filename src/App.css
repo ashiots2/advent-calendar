@@ -33,13 +33,13 @@
 .upper-mistletoe {
     top: 0;
     right: 0;
-    height: 25vh;
-    transform: rotate(225deg);
+    height: 35vh;
+    transform: rotate(0deg);
 }
 
 .bottom-mistletoe {
     bottom: 0;
     left: 0;
-    height: 25vh;
-    transform: rotate(45deg);
+    height: 35vh;
+    transform: rotate(180deg);
 }

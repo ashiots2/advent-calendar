@@ -6,11 +6,10 @@
 
 .openable-date__opened {
     transform: rotateY(180deg); /* Flipping effect */
-    background-color: #f5a623; /* Optional: Change background color when opened */
 }
 
 .openable-date img {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: block;
     transition: opacity 0.5s ease-in-out;
