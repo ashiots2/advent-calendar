@@ -1,4 +1,6 @@
 .calendar {
+    z-index: 1;
+    padding: 50px;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(5, 150px) 50px;
@@ -26,6 +28,16 @@
             'date-14 date-21 date-5'
             'date-24 calendar-title calendar-title';
     }
+}
+
+.calendar-card {
+    background-color: var(--card-bg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .calendar-title {

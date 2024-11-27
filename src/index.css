@@ -84,3 +84,23 @@ button:focus-visible {
         background-color: #f9f9f9;
     }
 }
+
+.twitch-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.instagram-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.youtube-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.tiktok-logo {
+    height: 50px;
+    width: 50px;
+}
